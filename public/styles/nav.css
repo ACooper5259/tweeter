@@ -1,6 +1,6 @@
 nav {
   height: 120px;
-  width: 100%;
+  flex-basis: 100pc;
   background-color: #4056A1;
   color: #ffffff;
   font-family: Bungee, cursive;
