@@ -4,30 +4,39 @@ form {
 }
 
 label {
-  width: 20pc;
-  border-bottom-width: 2px;
-  line-height: 3em;
-  border-bottom-color: #545149;
-  border-bottom-style: solid;
-  padding-top: -20px;
-  
+ 
+  border-bottom-width: 3px;
+  line-height: 3;
+  /* border-bottom-color: #545149;
+  border-bottom-style: solid; */
+  display: block;
 }
 
-textarea {
-  width: 40pc;
-  padding: 0px, 40px, 0px, 40px;
+.tweetInput {
+  display: block;
   outline: none;
   resize: none;
   border: none;
   border-bottom-color:#545149;
   border-bottom-style: solid;
+  background: transparent;
+  width: 100%;
+  margin: 1em 0;
+
+
 }
 
-.button {
+.flex-line {
   display: flex;
   justify-content: space-between;
-  width: 90pc
 }
+
 button {
-  text-align: left;
+  display: inline-block;
+  background-color: #4056A1;
+  color: #ffffff;
+  font-family: Bungee, cursive;
+  outline: none;
+  border: none;
 }
+
