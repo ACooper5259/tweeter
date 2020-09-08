@@ -1,11 +1,15 @@
 nav {
+  display: flex;
+  justify-content: space-between;
   height: 120px;
-  flex-basis: 100pc;
   background-color: #4056A1;
   color: #ffffff;
   font-family: Bungee, cursive;
   text-transform: capitalize;
-  padding: 1.5em
+  padding: 40px
 }
 
-
+.subtitle {
+  display: inline-block;
+  font-family: 'Source Sans Pro', sans-serif; 
+}
