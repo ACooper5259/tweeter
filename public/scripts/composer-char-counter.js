@@ -1,14 +1,16 @@
 $(document).ready(function () {
 
   const $tweet = $('#tweet-text');
-  
   $tweet.keyup(function() {
-    console.log ('tweet.change', this)
-    const txtLength = $("#tweet-text").val().length;
-    console.log(txtLength); 
-    // const $counter = $('output.counter');
+    const txtLength = $tweet.val().length;
     $("output.counter").html(function () {
-      return 140 - txtLength;
+      const charsLeft = 140 - txtLength;
+      if (charsLeft < 0) {
+        this.style.color = 'red';
+      } else {
+        this.style.color = '#545149';
+      }
+      return charsLeft
     });
   });
 

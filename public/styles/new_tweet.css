@@ -5,6 +5,7 @@ form {
 
 label {
   display: block;
+  font-size: 20px;
 }
 
 textarea {
@@ -16,6 +17,7 @@ textarea {
   background: transparent;
   width: 100%;
   margin: 1em 0;
+  font-size: 20px;
 }
 
 .flex-line {
