@@ -1,0 +1,33 @@
+form {
+  display: block;
+  text-align: left;
+}
+
+label {
+  width: 20pc;
+  border-bottom-width: 2px;
+  line-height: 3em;
+  border-bottom-color: #545149;
+  border-bottom-style: solid;
+  padding-top: -20px;
+  
+}
+
+textarea {
+  width: 40pc;
+  padding: 0px, 40px, 0px, 40px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom-color:#545149;
+  border-bottom-style: solid;
+}
+
+.button {
+  display: flex;
+  justify-content: space-between;
+  width: 90pc
+}
+button {
+  text-align: left;
+}
