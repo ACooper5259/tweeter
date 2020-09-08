@@ -4,17 +4,11 @@ form {
 }
 
 label {
- 
-  border-bottom-width: 3px;
-  line-height: 3;
-  /* border-bottom-color: #545149;
-  border-bottom-style: solid; */
   display: block;
 }
 
-.tweetInput {
+textarea {
   display: block;
-  outline: none;
   resize: none;
   border: none;
   border-bottom-color:#545149;
@@ -22,8 +16,6 @@ label {
   background: transparent;
   width: 100%;
   margin: 1em 0;
-
-
 }
 
 .flex-line {
@@ -38,5 +30,9 @@ button {
   font-family: Bungee, cursive;
   outline: none;
   border: none;
+}
+
+output {
+  font-family: Bungee, cursive;
 }
 
