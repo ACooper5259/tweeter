@@ -1,9 +1,7 @@
 article.tweet {
   display: block;
-  border-style: solid;
-  border-block-color: #545149;
+  border: 2px solid #727069;
   margin: 20px 0 0 0;
-  
 }
 
 article.tweet header {
@@ -15,11 +13,16 @@ article.tweet header {
   justify-content: space-between;
   align-content: center;
   background-image: none;
+  color: #727069;
 }
 
 .author {
   display: flex;
   align-content: center;
+}
+
+.handle {
+  color: transparent;
 }
 
 .author img {
@@ -30,16 +33,18 @@ article.tweet header {
 article.tweet main {
   font-size: 18px;
   border-bottom-style: solid;
-  border-bottom-color: #545149;
+  border-bottom-color: #928e7d;
   width: 96%;
   margin-left: 2%;
   margin-bottom: 2%;
   text-align: left;
   padding-left: 10px;
   padding-bottom: 15px;
+  color: #727069;
 }
 
 article.tweet footer {
+  color: #727069;
   font-size: 11px;
   text-align: left;
   padding-left: 10px;
@@ -51,4 +56,26 @@ article.tweet footer {
 .actions img {
   padding-left: 10px;
   padding-right:10px;
+}
+
+
+/* Styles hovering over the tweet box */
+article.tweet:hover {
+  box-shadow: 10px 5px 5px #4056A1;
+}
+
+article.tweet main:hover{
+  color: #000000;    
+}
+
+.handle:hover{
+  color: #4056A1;
+}
+
+.author:hover {
+  color: black;
+}
+
+article.tweet footer:hover {
+  color: black;
 }
