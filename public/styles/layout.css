@@ -26,8 +26,9 @@ main {
   display: flex;
   text-align: center;
   flex-flow: column;
-  margin-left: 5pc;
-  margin-right: 5pc;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 5%
 }
 
 
