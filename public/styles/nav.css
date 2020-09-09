@@ -1,13 +1,16 @@
 nav {
   display: flex;
   justify-content: space-between;
-  height: 120px;
   background-color: #4056A1;
   color: #ffffff;
+  font-size: 28px;
   font-family: Bungee, cursive;
   text-transform: capitalize;
-  padding: 40px;
-  font-size: 28px;
+  padding: 5%;
+  height: 15%;
+  width: 100%
+  position: fixed;
+  top: 0;
 }
 
 .subtitle {
