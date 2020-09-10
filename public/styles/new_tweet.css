@@ -39,9 +39,16 @@ output {
   font-family: Bungee, cursive;
 }
 
-.error {
+.no-text-error {
   font-size: 18px;
-  color: transparent;
+  color: red;
+  border-bottom-style: dotted;
+  font-weight: bold;
+  
+}
+.too-long-error {
+  font-size: 18px;
+  color: red;
   border-bottom-style: dotted;
   font-weight: bold;
   
