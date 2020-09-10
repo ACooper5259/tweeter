@@ -1,3 +1,7 @@
+#newtweet {
+  display: none;
+}
+
 form {
   display: block;
   text-align: left;
