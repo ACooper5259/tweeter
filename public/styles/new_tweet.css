@@ -32,6 +32,12 @@ button {
   line-height: 2.25;
   padding: 0 20px;
   background-color: #4056A1;
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
   color: #ffffff;
   font-family: Bungee, cursive;
   outline: none;
@@ -40,6 +46,8 @@ button {
   box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
               inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
+button:hover{
+  background-color: #9daee6 ;
 
 output {
   font-family: Bungee, cursive;
