@@ -39,7 +39,7 @@ $(() => {
     return $tweet;
   }
 
-
+ 
   // POST request for new tweets 
   const $tweetForm = $('#new-tweet-form');
   $tweetForm.on('submit', function (event) {

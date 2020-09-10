@@ -57,6 +57,7 @@ article.tweet footer {
 .actions img {
   padding-left: 10px;
   padding-right:10px;
+  opacity: 0.3;
 }
 
 
@@ -79,4 +80,8 @@ article.tweet main:hover{
 
 article.tweet footer:hover {
   color: black;
+}
+
+.actions img:hover {
+  opacity: 1;
 }
