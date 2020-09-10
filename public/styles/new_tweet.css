@@ -39,3 +39,11 @@ output {
   font-family: Bungee, cursive;
 }
 
+.error {
+  font-size: 18px;
+  color: transparent;
+  border-bottom-style: dotted;
+  font-weight: bold;
+  
+}
+

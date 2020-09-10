@@ -47,11 +47,13 @@
       <!-- New tweet content -->
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
+        
         <form id="new-tweet-form">
           <label for="tweet-text">What are you humming about?</label>
           <textarea rows="1" name="text" id="tweet-text"></textarea>
           <div class="flex-line">
             <button type="submit">Tweet</button>
+            <p class="error">mmm... I don't think I can post this</p>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
