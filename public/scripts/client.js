@@ -32,7 +32,7 @@ $(() => {
             ${escape(tweet.content.text)}
           </main>
           <footer>
-            <span>${escape(tweet.created_at)} days ago</span><span class="actions"><img src="/images/flag.png" alt="flag post"><img src="/images/re-tweet.png" alt="re-tweet"><img src="/images/heart.png"></span>
+            <span>${moment(tweet.created_at).fromNow()}</span><span class="actions"><img src="/images/flag.png" alt="flag post"><img src="/images/re-tweet.png" alt="re-tweet"><img src="/images/heart.png"></span>
           </footer>
       </article>`);
     
