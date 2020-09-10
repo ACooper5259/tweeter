@@ -5,6 +5,7 @@
  */
 
 
+
 $(() => {
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
@@ -38,8 +39,20 @@ $(() => {
   $tweetForm.on('submit', function (event) {
     event.preventDefault();
     const serializedTweet = $(this).serialize();
-    $.post('/tweets', serializedTweet)
+    const textValue = $('#tweet-text').val()
+    if (textValue.length === 0){
+      alert('Please make sure you type a message')
+    } else if (textValue.length > 140){
+      alert('You can not tweet more than 140 characters at a time!')
+    } else {
+      $.post('/tweets', serializedTweet)
+      .then((response) => {
+      console.log (response);
+      loadTweets()
+      })
+    }
   });
+
 
   // GET request for tweets to /tweets
   const loadTweets = () => {
