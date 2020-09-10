@@ -8,25 +8,32 @@
 
 $(() => {
   const renderTweets = function (tweets) {
+    $('#tweets-container').empty();
     for (const tweet of tweets) {
       const item_created = createTweetElement(tweet)
       $('#tweets-container').prepend(item_created)
     }
   }
 
+  const escape = function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML
+  }
+
   const createTweetElement = function (tweet) {
     let $tweet = 
       $(`<article class="tweet">
           <header>
-            <span class="author"><img src="${tweet.user.avatars}" alt="tweet author">
-            ${tweet.user.name}</span>
-            <span class="handle">${tweet.user.handle}</span>
+            <span class="author"><img src="${escape(tweet.user.avatars)}" alt="tweet author">
+            ${escape(tweet.user.name)}</span>
+            <span class="handle">${escape(tweet.user.handle)}</span>
           </header>
           <main>
-            ${tweet.content.text}
+            ${escape(tweet.content.text)}
           </main>
           <footer>
-            <span>${tweet.created_at} day ago</span><span class="actions"><img src="/images/flag.png" alt="flag post"><img src="/images/re-tweet.png" alt="re-tweet"><img src="/images/heart.png"></span>
+            <span>${escape(tweet.created_at)} days ago</span><span class="actions"><img src="/images/flag.png" alt="flag post"><img src="/images/re-tweet.png" alt="re-tweet"><img src="/images/heart.png"></span>
           </footer>
       </article>`);
     
