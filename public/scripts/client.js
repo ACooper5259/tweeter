@@ -10,7 +10,7 @@ $(() => {
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
       const item_created = createTweetElement(tweet)
-      $('#tweets-container').append(item_created)
+      $('#tweets-container').prepend(item_created)
     }
   }
 
@@ -41,14 +41,14 @@ $(() => {
     const serializedTweet = $(this).serialize();
     const textValue = $('#tweet-text').val()
     if (textValue.length === 0){
-      alert('Please make sure you type a message')
+      alert( '❌ Please make sure you type a message')
     } else if (textValue.length > 140){
-      alert('You can not tweet more than 140 characters at a time!')
+      alert('❌ You can not tweet more than 140 characters at a time!')
     } else {
       $.post('/tweets', serializedTweet)
       .then((response) => {
-      console.log (response);
       loadTweets()
+      $('#tweet-text').val(' ');
       })
     }
   });
