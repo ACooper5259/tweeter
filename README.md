@@ -6,7 +6,8 @@ This repository is the starter code for the project: Students will fork and clon
 
 ## Screenshot
 A look at what the desktop size app looks like.
-(https://github.com/ACooper5259/tweeter/blob/master/docs/First_Tweet.png)
+!["screenshot of top of app in desktop size with compose box, toggled by nav button"](https://github.com/ACooper5259/tweeter/blob/master/docs/First_Tweet.png)
+!["screenshot of top of app in desktop size with compose box, toggled by nav button"](https://github.com/ACooper5259/tweeter/blob/master/docs/desktop_compose_hidden.png)
 
 ## Getting Started
 
