@@ -27,7 +27,8 @@ $(document).ready(function () {
     let $tweet = 
       $(`<article class="tweet">
           <header>
-            <span class="author"><img src="${escape(tweet.user.avatars)}" alt="tweet author">
+          <span class="author">
+            <img src="${escape(tweet.user.avatars)}" alt="tweet author">
             ${escape(tweet.user.name)}</span>
             <span class="handle">${escape(tweet.user.handle)}</span>
           </header>
