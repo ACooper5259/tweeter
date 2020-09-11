@@ -3,7 +3,9 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
+
+
+ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -14,7 +16,7 @@ html {
  * Global layout stuff
  */
 
-
+/* display for devices les than 1024px wide*/
  body {
   color: #545149;
   background-color: #f4f1ec;
@@ -31,8 +33,11 @@ main {
   margin-bottom: 5%;
 }
 
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+/* desktop css */
+@media only screen and (min-width: 1024px){
+  main {
+    width: 50%;
+    float: right;
+    margin-top: 17vh;
+  }
+}

@@ -36,7 +36,12 @@ $(document).ready(function () {
             ${escape(tweet.content.text)}
           </main>
           <footer>
-            <span>${moment(tweet.created_at).fromNow()}</span><span class="actions"><img src="/images/flag.png" alt="flag post"><img src="/images/re-tweet.png" alt="re-tweet"><img src="/images/heart.png"></span>
+            <span class="date">${moment(tweet.created_at).fromNow()}</span>
+            <span class="actions">
+              <img src="/images/flag.png" alt="flag post">
+              <img src="/images/re-tweet.png" alt="re-tweet">
+              <img src="/images/heart.png">
+            </span>
           </footer>
       </article>`);
     

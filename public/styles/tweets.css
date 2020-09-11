@@ -1,8 +1,7 @@
-/* stoles for hoveing over element is at the bottom */
+/* display for devices les than 1024px wide*/
 
 article.tweet {
   display: block;
-  /* I prefer the border to remain consistent, hence my use of px */
   border: 2px solid #727069; 
   margin: 5vh 0 0 0;
 }
@@ -43,8 +42,6 @@ article.tweet footer {
   margin: 0 2% 2% 2%;
 }
 
-
-
 .handle {
   color: transparent;
 }
@@ -56,8 +53,6 @@ article.tweet footer {
   padding-right: 2vh;
   align-self: flex-end;
 }
-
-
 
 .actions img {
   padding-left: 1.25vh;
@@ -89,4 +84,29 @@ article.tweet footer:hover {
 
 .actions img:hover {
   opacity: 1;
+}
+
+/* desktop header css */
+@media only screen and (min-width: 1024px){
+
+  article.tweet main {
+    width: 93%;
+    height: 4vh;
+    margin-top: 1%;
+    text-align: left;
+  }
+
+  article.tweet header {
+    margin: 1vh 1vh 1vh 0;
+    width: 93%;
+  }
+
+  article.tweet footer {
+    margin: 2% 2% 2% 2%;
+  }
+
+  .handle {
+    float: right;
+  }
+  
 }

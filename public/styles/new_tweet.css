@@ -1,5 +1,6 @@
 /* the css code is grouped by type */
 
+/* smaller devices only (up to 1024px wide */
 form {
   display: block;
   text-align: left;
@@ -8,7 +9,8 @@ form {
 
 label {
   display: block;
-  font-size: 20px;
+  font-size: 1.2rem;
+  padding-top: 2vh;
 }
 
 textarea {
@@ -73,4 +75,12 @@ output {
   color: red;
   border-bottom-style: dotted;
   font-weight: bold;
+}
+
+/* desktop size css */
+@media only screen and (min-width: 1024px){
+  
+  label {
+    font-size: 1.5rem;
+  }
 }

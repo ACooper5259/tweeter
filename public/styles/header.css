@@ -1,7 +1,7 @@
-/*  */
+/* display for devices les than 1024px wide*/*/
 header {
-  margin-top: 15vh;
-  height: 50vh;
+  margin-top: 0;
+  height: 35vh;
   background-color: #e0bb8d;
   text-align: center;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
@@ -13,6 +13,30 @@ h2 {
 }
 
 .image {
-  padding-top: 7vh;
-  size: 25vh;
+  padding-top: 0;
+  size: 20vh;
+}
+
+
+/* desktop header css */
+
+@media only screen and (min-width: 1024px){
+
+  header {
+    display: inline-block;
+    width: 30%;
+    margin-top: 21vh;
+    margin-left: 5%;
+    margin-right: 3%;
+    height: 50vh;
+    background-color: #e0bb8d;
+    text-align: center;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+  }
+  .image {
+    padding-top: 7vh;
+    size: 25vh;
+  }
+
 }
