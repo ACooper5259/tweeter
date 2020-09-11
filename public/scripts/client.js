@@ -4,22 +4,25 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
+$(document).ready(function () {
 
-
-$(() => {
+  // Display tweets in most recent first
   const renderTweets = function (tweets) {
     for (const tweet of tweets) {
-      const item_created = createTweetElement(tweet)
-      $('#tweets-container').prepend(item_created)
+      const item_created = createTweetElement(tweet);
+      $('#tweets-container').prepend(item_created);
     }
   }
 
+  // create function to ensure safe user inout is safe
   const escape = function(str) {
     let div = document.createElement('div');
     div.appendChild(document.createTextNode(str));
     return div.innerHTML
   }
 
+
+// Retrieve user input and create a new tweet
   const createTweetElement = function (tweet) {
     let $tweet = 
       $(`<article class="tweet">
@@ -45,31 +48,30 @@ $(() => {
   $tweetForm.on('submit', function (event) {
     event.preventDefault();
     const serializedTweet = $(this).serialize();
-    const textValue = $('#tweet-text').val()
+    const textValue = $('#tweet-text').val();
     if (textValue.length === 0){
-      $('.no-text-error').show()
+      $('.no-text-error').show();
     } else if (textValue.length > 140){
-      $('.too-long-error').show()
+      $('.too-long-error').show();
     } else {
       $.post('/tweets', serializedTweet)
-      .then((response) => {
-      loadTweets()
-      $('#tweet-text').val(' ');
-        $('.no-text-error').hide()
-        $('.too-long-error').hide()
-        
-      })
-    }
+        .then((response) => {
+          loadTweets()
+          $('#tweet-text').val(' ');
+          $('.no-text-error').hide();
+          $('.too-long-error').hide();
+        });
+    };
   });
 
 
   // GET request for tweets to /tweets
   const loadTweets = () => {
     $.get('/tweets', (tweets) => {
-      renderTweets(tweets)
-    })
+      renderTweets(tweets);
+    });
   };
-  loadTweets()
+  loadTweets();
 
   });
 

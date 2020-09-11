@@ -1,6 +1,4 @@
-#newtweet {
-  display: none;
-}
+/* the css code is grouped by type */
 
 form {
   display: block;
@@ -22,12 +20,8 @@ textarea {
   background: transparent;
   width: 100%;
   margin: 1em 0;
-  font-size: 20px;
-}
-
-.flex-line {
-  display: flex;
-  justify-content: space-between;
+  font-size: 1.1rem;
+  line-height: 2;
 }
 
 button {
@@ -58,18 +52,25 @@ output {
   font-family: Bungee, cursive;
 }
 
+#newtweet {
+  display: none;
+}
+
+.flex-line {
+  display: flex;
+  justify-content: space-between;
+}
+
 .no-text-error {
   font-size: 18px;
   color: red;
   border-bottom-style: dotted;
   font-weight: bold;
-  
+
 }
 .too-long-error {
   font-size: 18px;
   color: red;
   border-bottom-style: dotted;
   font-weight: bold;
-  
 }
-

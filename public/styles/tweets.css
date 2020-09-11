@@ -1,15 +1,31 @@
+/* stoles for hoveing over element is at the bottom */
+
 article.tweet {
   display: block;
-  border: 2px solid #727069;
-  margin: 20px 0 0 0;
+  /* I prefer the border to remain consistent, hence my use of px */
+  border: 2px solid #727069; 
+  margin: 5vh 0 0 0;
+}
+
+article.tweet main {
+  font-size: 1.1rem;
+  border-bottom-style: solid;
+  border-bottom-color: #928e7d;
+  width: 96%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  text-align: left;
+  padding-left: 1vw;
+  padding-bottom: 1vh;
+  color: #727069;
 }
 
 article.tweet header {
-  margin: 20px;
-  padding: 20px 0;
-  font-size: 16px;
+  margin: 2vh 0 0 2vh;
+  padding: 2vh 2vh 0 0;
+  font-size: 1rem;
   background-color: transparent;
-  height: 80px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -17,53 +33,42 @@ article.tweet header {
   color: #727069;
 }
 
-.author {
-  display: flex;
-  align-content: center;
-}
-
-.handle {
-  color: transparent;
-}
-
-.author img {
-  padding-right: 20px;
-  align-self: flex-end;
-}
-
-article.tweet main {
-  font-size: 18px;
-  border-bottom-style: solid;
-  border-bottom-color: #928e7d;
-  width: 96%;
-  margin-left: 2%;
-  margin-bottom: 2%;
-  text-align: left;
-  padding-left: 10px;
-  padding-bottom: 15px;
-  color: #727069;
-}
-
 article.tweet footer {
   color: #727069;
-  font-size: 11px;
+  font-size: 0.75rem;
   text-align: left;
-  padding-left: 10px;
+  padding-left: 2vh;
   display: flex;
   justify-content: space-between;
   margin: 0 2% 2% 2%;
 }
 
+
+
+.handle {
+  color: transparent;
+}
+.author {
+  display: flex;
+  align-content: center;
+}
+.author img {
+  padding-right: 4vh;
+  align-self: flex-end;
+}
+
+
+
 .actions img {
-  padding-left: 10px;
-  padding-right:10px;
+  padding-left: 1.5vh;
+  padding-right:0.5vh;
   opacity: 0.3;
 }
 
 
 /* Styles hovering over the tweet box */
 article.tweet:hover {
-  box-shadow: 10px 5px 5px #4056A1;
+  box-shadow: 2vh 1vh 1vh #4056A1;
 }
 
 article.tweet main:hover{

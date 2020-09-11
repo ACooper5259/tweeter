@@ -10,7 +10,7 @@ $(document).ready(function () {
       } else {
         this.style.color = '#545149';
       }
-      return charsLeft
+      return charsLeft;
     });
   });
 

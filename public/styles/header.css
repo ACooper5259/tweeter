@@ -1,14 +1,18 @@
+/*  */
 header {
   margin-top: 15vh;
-  height: 70vh;
+  height: 50vh;
   background-color: #e0bb8d;
   text-align: center;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 
 }
 
+h2 {
+  margin: 0;
+}
 
 .image {
-  padding-top: 30px;
+  padding-top: 7vh;
   size: 25vh;
 }
